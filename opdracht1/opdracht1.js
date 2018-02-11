@@ -41,7 +41,7 @@ function voegWaarde(waarde)
 function voegTek(waarde)
 {
    // string leeg maken wanneer nodig 
-   if(bool){document.getElementById("uitvoer").innerHTML=""; bool = false;}
+   if(bool){document.getElementById("uitvoer").innerHTML="";}
     
    else
    {
