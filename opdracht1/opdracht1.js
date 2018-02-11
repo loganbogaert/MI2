@@ -2,7 +2,7 @@
 var getal = "";
 var getallen = [];
 var teken;
-var bool = false;
+var bool = true;
 //**********************************<function>*********************************
 function telOp(getaleen, getaltwee)
 {
