@@ -33,7 +33,7 @@ function voegWaarde(waarde)
    // als getal niet gelijk is aan 0 of leeg
    if(waarde!="0" || getal!="")
    {
-        // als tekst toevoegen
+       // als tekst toevoegen
        getal = getal + waarde;
        // opscherm zetten
        toonOpScherm(waarde,"");
