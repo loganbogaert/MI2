@@ -63,11 +63,7 @@ function toon()
      // veld leeg maken
      document.getElementById("uitvoer").innerHTML = "";
     // for lus om array op scherm te zetten
-    for(i=0;i<getallen.length;i++)
-    {
-            // op scherm
-            document.getElementById("uitvoer").innerHTML += getallen[i];
-    }
+    for(i=0;i<getallen.length;i++){ document.getElementById("uitvoer").innerHTML += getallen[i];}
     // laatste getal op scherm zetten
     document.getElementById("uitvoer").innerHTML += getal;
 }
