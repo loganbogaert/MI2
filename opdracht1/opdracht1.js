@@ -31,7 +31,7 @@ function voegWaarde(waarde)
    // als getal niet gelijk is aan 0 of leeg
    if(waarde!="0" || getal!="")
    {
-       // als tekst toevoegen
+        // als tekst toevoegen
        getal = getal + waarde;
        // opscherm zetten
        toonOpScherm(waarde,"");
@@ -40,20 +40,26 @@ function voegWaarde(waarde)
 //**********************************<function>*********************************
 function voegTek(waarde)
 {
-    // als getal leeg is
-    if(getal!="")
-    {
-        // getal in array steken
-        getallen.push(getal);
-        // teken in array steken
-        getallen.push(waarde);
-        // getal op 0 zetten
-        getal = "";
-    }
-    // teken vervangen
-    else{getallen[getallen.length-1] = waarde;}
-    // op scherm zetten
-    toonOpScherm(waarde,"");
+   // string leeg maken wanneer nodig 
+   if(bool){document.getElementById("uitvoer").innerHTML=""; bool = false;}
+    
+   else
+   {
+        // als getal leeg is
+        if(getal!="")
+        {
+           // getal in array steken
+           getallen.push(getal);
+           // teken in array steken
+           getallen.push(waarde);
+           // getal op 0 zetten
+           getal = "";
+        }
+        // teken vervangen
+        else{getallen[getallen.length-1] = waarde;}
+        // op scherm zetten
+        toonOpScherm(waarde,"");
+   }
 }
 //**********************************<function>*********************************
 function toon()
@@ -61,7 +67,7 @@ function toon()
      // veld leeg maken
      document.getElementById("uitvoer").innerHTML = "";
     // for lus om array op scherm te zetten
-    for(i=0;i<getallen.length;i++){ document.getElementById("uitvoer").innerHTML += getallen[i];}
+    for(i=0;i<getallen.length;i++){document.getElementById("uitvoer").innerHTML += getallen[i];}
     // laatste getal op scherm zetten
     document.getElementById("uitvoer").innerHTML += getal;
 }
