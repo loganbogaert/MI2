@@ -1,9 +1,7 @@
 //**********************************<vars>*************************************
 var getal = "";
 var getallen = [];
-var aantal = 1;
 var teken;
-var antwoord;
 var bool = false;
 //**********************************<function>*********************************
 function telOp(getaleen, getaltwee)
