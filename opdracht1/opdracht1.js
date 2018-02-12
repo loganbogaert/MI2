@@ -42,7 +42,6 @@ function voegTek(waarde)
 {
    // string leeg maken wanneer nodig 
    if(bool){document.getElementById("uitvoer").innerHTML="";}
-    
    else
    {
         // als getal leeg is
