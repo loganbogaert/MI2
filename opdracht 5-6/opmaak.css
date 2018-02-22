@@ -1,0 +1,23 @@
+.whitecase,.darkcase
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.whitecase { background-color: white; }
+
+.clear { clear: both;}
+
+.darkcase { background-color: black;}
+
+body { background-color: darkgray; }
+
+.main
+{
+    left: 50%;
+    top: 2em;
+    position: relative;
+    transform: translateX(-50%);
+    display: table;
+    box-shadow: 0px 0px 18px red;
+}
