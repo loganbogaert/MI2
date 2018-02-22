@@ -3,7 +3,7 @@ var bool = true;
 //******************************<function>******************************
 function onLoad()
 {
-    // for lus voor 100 priemgetallen
+    // for lus voor een miljoen priemgetallen
     for(i=1;i<=1.0e+9;i++)
     {   
         // elk getal checken een for lus 
