@@ -35,5 +35,4 @@ function loadDam()
     }
     // op scherm zetten
     document.getElementById("Main").innerHTML = nodes;
-   
 }
