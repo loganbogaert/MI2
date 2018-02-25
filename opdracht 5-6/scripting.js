@@ -12,25 +12,28 @@ function loadDam()
     // locale var 
     var kolom = document.getElementById("kolom").value;
     // locale var
-    var node;
+    var nodes = "";
     // for lus voor de rijen te tekenen
     for(i=0;i<rij;i++)
     {
         // for lus voor de kollomen te tekenen
         for(b=0;b<kolom;b++)
         {
-            // div aanmaken
-            node = document.createElement("div");
+            // html content toevoegen
+            nodes += "<div ";
             // zien welke kleur hij moet zetten
-            if(bool){ node.classList.add("darkcase"); bool = false; }
+            if(bool){ nodes += "class = 'darkcase"; bool = false; }
             // zo niet wordt het wit
-            else{ node.classList.add("whitecase"); bool = true; }
+            else{ nodes += "class = 'whitecase"; bool = true; }
             // nieuw kolom 
-            if(b==0 && i!=0) {node.classList.add("clear");}
-            // toevoegen op scherm
-            document.getElementById("Main").appendChild(node);
+            if(b==0 && i!=0) { nodes += " clear";}
+            // html content toevoegen
+            nodes += "'></div>";
         }
         // bool wisselen als het een even getal is, anders klopt het dambord niet
         if(b % 2 == 0) {bool = !bool;}
     }
+    // op scherm zetten
+    document.getElementById("Main").innerHTML = nodes;
+   
 }
