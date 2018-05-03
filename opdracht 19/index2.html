@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="../build/css/framework7.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+
+    
+   
+    
+  <link rel="icon" href="img/f7-icon.png">
+</head>
+<body>
+ 
+    <div id="app">
+     
+        
+      <div class="panel panel-left panel-cover">
+      <div class="page">
+        <div class="page-content">
+          <div class="block-title">Topics</div>
+          <div class="block">
+            <p>This is a left side panel. You can close it by clicking outsite or on this link: <a href="#" class="panel-close">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="panel-open">Right Panel</a></p>
+          </div>
+          <div class="block-title">Testing</div>
+          <div class="list links-list">
+            <ul>
+             <li>
+                 
+                <a class="item-content item-link panel-close" href="/about/">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">About Me</div>
+                  </div>
+                </a>
+                 
+              </li>
+                 <li>
+                     <a class="item-content item-link panel-close" href="/game/">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">project MI2</div>
+                  </div>
+                </a>
+                
+              </li>
+             
+            </ul>
+          </div>
+          <div class="block">
+            <p>This is just a simple test. If you can read this, this means everything's been built correctly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+ <div class="view view-main view-init ios-edges" data-url="/">
+     
+     
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+            <div class="title sliding">Framework7</div>
+            <div class="right">
+              <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                <i class="icon f7-icons ios-only">search_strong</i>
+                <i class="icon material-icons md-only">search</i>
+              </a>
+            </div>
+            <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
+              <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                  <input type="search" placeholder="Search components"/>
+                  <i class="searchbar-icon"></i>
+                  <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="list searchbar-hide-on-search">
+            <ul>
+              <li>
+                <a class="item-content item-link" href="/about/">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">About Me</div>
+                  </div>
+                </a>
+              </li>
+                 <li>
+                     <a class="item-content item-link" href="/game/">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">project MI2</div>
+                  </div>
+                </a>
+              </li>
+                <li>
+                    
+                      <a class="item-content item-link" href="/details/">
+                  <div class="item-media"><i class="icon icon-f7"></i></div>
+                  <div class="item-inner">
+                    <div class="item-title">Details</div>
+                  </div>
+                </a>
+                
+                </li>
+            </ul>
+          </div>
+    </div>
+     </div>
+        
+         <div class="toolbar toolbar-bottom-md">
+    <div class="toolbar-inner">
+        <a href="/about/" class="link">About me</a>
+        <a href="/game/" class="link">Project MI2</a>
+        <a class="link external" href="https://github.com/loganbogaert/MI2-project" target="_blank">Github</a>
+    </div>
+</div>
+        </div>
+           
+    
+</div>
+    
+    
+   
+
+
+    
+  <script src="../build/js/framework7.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
